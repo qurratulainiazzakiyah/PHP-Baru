@@ -1,4 +1,4 @@
-html>
+<html>
 <body>
 
 Welcome <?php echo $_POST["Email (Wajib Diisi)"]; ?><br>
