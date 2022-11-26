@@ -1,4 +1,4 @@
-<html>
+html>
 <body>
 
 Welcome <?php echo $_POST["Email (Wajib Diisi)"]; ?><br>
@@ -9,9 +9,9 @@ $servername="localhost";
 $username="root";
 $password="";
 $dbname="mydb";
-$Email (Wajib Diisi)=$_POST["Email (Wajib Diisi)"];
-$Pesan (Wajib Diisi)=$_POST["Pesan (Wajib Diisi)"];
-
+$firstname=$_POST["firstname"];
+$lastname=$_POST["lastname"];
+$email=$_POST["email"];
 
 //Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,8 +20,8 @@ if ($conn->connect_error) {
     die("Connection failed:" . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyGuests (Email (Wajib Diisi),Pesan (Wajib Diisi))
-VALUES ('$Email (Wajib Diisi)', '$Pesan (Wajib Diisi)')";
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+VALUES ('$firstname', '$lastname', '$email')";
 
 if ($conn -> query($sql) === TRUE) {
     echo "New records created succesfully";
