@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -43,6 +43,12 @@
         </div>
       </div>
       <div class="contact-form">
+      <form action="welcome.php" method="post">
+       Email (Wajib Diisi):<input type="text" name="Email (Wajib Diisi)"><br>
+       Pesan (Wajib Diisi):<input type="text" name="Pesan (Wajib Diisi)"><br>
+       <input type="submit">
+      </form>
+
         <h3 class="section-title">Hubungi kami</h3>
         <p>Email (Wajib Diisi)</p>
         <input>
