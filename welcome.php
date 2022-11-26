@@ -1,8 +1,8 @@
 <html>
 <body>
 
-Welcome <?php echo $_POST["firstname"]; ?><br>
-Your Email adress is: <?php echo $_POST["email"]; ?>
+Welcome <?php echo $_POST["Email (Wajib Diisi)"]; ?><br>
+Your Email adress is: <?php echo $_POST["Pesan (Wajib Diisi)"]; ?>
 
 <?php
 $servername="localhost";
