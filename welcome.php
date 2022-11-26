@@ -1,8 +1,8 @@
 <html>
 <body>
 
-Welcome <?php echo $_POST["Email (Wajib Diisi)"]; ?><br>
-Your Email adress is: <?php echo $_POST["Pesan (Wajib Diisi)"]; ?>
+Welcome <?php echo $_POST["firstname"]; ?><br>
+Your Email adress is: <?php echo $_POST["email"]; ?>
 
 <?php
 $servername="localhost";
@@ -32,7 +32,7 @@ if ($conn -> query($sql) === TRUE) {
 $conn->close();
 ?>
 <br>
-<a href="http:/localhost/daftar.php">Data yang terdaftar</a>
+<a href="http:/localhost/index.php">Data yang terdaftar</a>
 
 </body>
 </html> 
